@@ -38,6 +38,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    "lists.apps.ListsConfig",
+    "rest_framework",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -79,11 +81,17 @@ WSGI_APPLICATION = "LOL_backend.wsgi.application"
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
+db_user = config[section]["postgres_user"]
+db_password = config[section]["postgres_password"]
 
 DATABASES = {
     "default": {
-        "ENGINE": "django.db.backends.sqlite3",
-        "NAME": BASE_DIR / "db.sqlite3",
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "LOL_DB",
+        "USER": db_user,
+        "PASSWORD": db_password,
+        "HOST": "db",
+        "PORT": "5432",
     }
 }
 

@@ -4,19 +4,10 @@
     <title>LOL</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>body{margin:2em;}body{color:#333;font-family:Cambria,Georgia,serif;}*{font-family:Arial,Helvetica,sans-serif;}</style>
-    <link rel="stylesheet"
-          href="{% static 'lists/styles.ab0361ef4f0b82c44f22.css' %}"
-          media="print"
-          onload="this.media='all'">
-    <noscript>
-        <link rel="stylesheet" href="{% static 'lists/styles.ab0361ef4f0b82c44f22.css' %}">
-    </noscript></head>
-        <body>
-            <app-root></app-root>
-            <script src="{% static 'lists/runtime.4e741e759adf07eef7c4.js' %}" defer></script>
-            <script src="{% static 'lists/polyfills.a580f0120146420936f2.js' %}" defer></script>
-            <script src="{% static 'lists/main.0d97c401287363ed2a8a.js' %}" defer></script>
+    <link rel="icon" type="image/x-icon" href="{% static 'lists/favicon.ico' %}">
+    <style>body{margin:2em;}body{color:#333;font-family:Cambria,Georgia,serif;}*{font-family:Arial,Helvetica,sans-serif;}</style><link rel="stylesheet" href="{% static 'lists/styles.css' %}" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="{% static 'lists/styles.css' %}"></noscript></head>
+    <body>
+        <app-root></app-root>
+        <script src="{% static 'lists/runtime.js' %}" defer></script><script src="{% static 'lists/polyfills.js' %}" defer></script><script src="{% static 'lists/main.js' %}" defer></script>
 
-        </body></html>
+    </body></html>

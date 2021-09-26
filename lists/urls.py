@@ -8,5 +8,6 @@ router.register(r"items", views.ItemViewSet)
 router.register(r"lists", views.ListViewSet)
 
 urlpatterns = [
+    path("", views.HomePageView.as_view()),
     path("", include(router.urls)),
 ]

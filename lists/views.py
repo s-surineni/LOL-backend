@@ -1,8 +1,14 @@
 from .models import List, Item
 from .serializers import ListSerializer, ItemSerializer
+
+from django.shortcuts import render
+from django.views.generic import TemplateView
 from rest_framework import viewsets
 
-# Create your views here.
+
+class HomePageView(TemplateView):
+    def get(self, request, **kwargs):
+        return render(request, "lists/index.html", context=None)
 
 
 class ListViewSet(viewsets.ModelViewSet):

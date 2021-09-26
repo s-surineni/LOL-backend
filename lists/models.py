@@ -24,6 +24,7 @@ class Item(models.Model):
 
     # likes -> computed field?
     # comments
+    # downvote
 
 
 class Comment(models.Model):

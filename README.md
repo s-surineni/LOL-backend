@@ -8,3 +8,4 @@ Backend for LOL
 * `docker-compose --env-file=./.env.dev up`
 * `docker-compose run  web python manage.py migrate`
 * `docker-compose run  web python manage.py createsuperuser --email temp@em.ail --user temp`
+* `docker-compose run --rm db psql -d postgres://<user>@<service>/<db>`

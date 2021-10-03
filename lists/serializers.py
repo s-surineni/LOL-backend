@@ -11,4 +11,4 @@ class ItemSerializer(serializers.HyperlinkedModelSerializer):
 class ListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = List
-        fields = ["name"]
+        fields = ["name", "id"]
